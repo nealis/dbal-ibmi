@@ -1,12 +1,12 @@
 {
-    "name": "alanseiden/doctrine-dbal-ibmi",
-    "description": "Doctrine DBAL module for DB2 on the IBM i platform",
+    "name": "cassvail/dbal-ibmi",
+    "description": "Fork of alanseiden/doctrine-dbal-ibmi with edge unmerged commits",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "James Titcumb",
-            "email": "james@asgrim.com"
+            "name": "Cassiano Vailati",
+            "email": "c.vailati@esconsulting.it"
         }
     ],
     "require": {
