@@ -1,12 +1,12 @@
 {
-    "name": "cassvail/dbal-ibmi",
+    "name": "nealis/dbal-ibmi",
     "description": "Fork of alanseiden/doctrine-dbal-ibmi with edge unmerged commits",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Cassiano Vailati",
-            "email": "c.vailati@esconsulting.it"
+            "name": "Nealis",
+            "email": "info@nealis.it"
         }
     ],
     "require": {
