@@ -30,6 +30,8 @@ use Doctrine\DBAL\Driver\IBMDB2\DB2Connection;
  */
 class DB2Driver extends AbstractDB2Driver
 {
+    const SYSTEM_LINUX = 'Linux';
+
     /**
      * {@inheritdoc}
      */
@@ -55,7 +57,12 @@ class DB2Driver extends AbstractDB2Driver
             $password = null;
         }
 
-        if (PHP_OS === static::SYSTEM_IBMI) {
+        if (
+            (
+                PHP_OS === static::SYSTEM_LINUX &&
+                function_exists('db2_connect')
+            ) || PHP_OS === static::SYSTEM_IBMI
+        ) {
             return new DB2IBMiConnection($params, $username, $password, $driverOptions);
         } else {
             return new DB2Connection($params, $username, $password, $driverOptions);
