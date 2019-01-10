@@ -30,6 +30,7 @@ use Doctrine\DBAL\Driver\IBMDB2\DB2Connection;
  */
 class DB2Driver extends AbstractDB2Driver
 {
+    const SYSTEM_IBMI = 'AIX';
     const SYSTEM_LINUX = 'Linux';
 
     /**
