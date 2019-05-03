@@ -90,7 +90,7 @@ class DB2IBMiConnection extends DB2Connection
      */
     public function getWrappedResourceHandle()
     {
-        $connProperty = new \ReflectionProperty(DB2Connection::class, '_conn');
+        $connProperty = new \ReflectionProperty(DB2Connection::class, 'conn');
         $connProperty->setAccessible(true);
         return $connProperty->getValue($this);
     }
